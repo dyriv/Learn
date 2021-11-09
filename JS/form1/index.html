@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Learn JS (first form)</title>
+
+  <!-- link CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="form">
+    <form id="main-form" method="post">
+
+      <label for="name">Name:</label>
+      <input class="form-input" type="text" name="name" placeholder="Name" id="name"><br><br>
+
+      <label for="password">Password:</label>
+      <input class="form-input" type="password" name="password" placeholder="Password" id="pass"><br><br>
+
+      <label for="repass">Confirm password:</label>
+      <input class="form-input" type="password" name="repass" placeholder="Confirm password" id="repass"><br><br>
+
+      <div class="form-state">
+        <span>State:</span>
+        <div class="form-state-choose">
+          <input type="radio" name="state" id="male" value="Male">
+          <label for="male">Male</label>
+          <input type="radio" name="state" id="female" value="Female">
+          <label for="female">Female</label><br><br>
+        </div>
+      </div>
+
+
+      <input class="form-btn" type="submit" name="submit" value="Done">
+      <div id="error" class="error"><span></span></div>
+    </form>
+  </div>
+
+  <!-- link JS -->
+  <script src="main.js"></script>
+</body>
+</html>
