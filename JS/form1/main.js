@@ -25,7 +25,7 @@ function checkForm(event) {
     document.getElementById('error').innerHTML = error;
   } else {
     alert("Форма отправлена");
-    window.location = "https://google.com";
+    window.location = "/";  // перезагружает страницу
   }
 
 }
